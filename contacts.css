@@ -1,0 +1,120 @@
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact.section{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9),url(""));
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.contact-section .container h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgb(238,235,235);
+    letter-spacing: 2px;
+}
+
+.contact-section .container p{
+    text-align:center;
+    width:70;
+    margin-left:1000px;
+    
+    padding-bottom: 3%;
+    color:  #fff;
+    letter-spacing: 3px;
+}
+.contact-form i.fa{
+    font-size: 32px;
+    padding: 3%;
+    background-color: none;
+    margin: 2%
+    
+    
+}
+
+.contact-form i.fa:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+    color:#fff;
+}
+.contact.form{
+    display: grid;
+    grid-template-columns:auto auto;
+}
+
+.form.info{
+    font-size: 32px;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width:400px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
+    
+}
+input::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 400px; 
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
+    
+}
+textarea::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+.submit{
+    width: 300px;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align:center;
+    cursor:pointer;
+    letter-spacing: 2px;
+    margin-left: 80px;
+    border:2px solid rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
+    
+}
+
+.submit:hover{
+    border: 1px solid #fff;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+/* media queries  */
+@media (max-width: 768px){
+    #contact-section .contact-form{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+    #contact-section .submit{
+        width: 60%;
+    }
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <link href="searchcsss.css">
+    <head>
+        <title>Book Your Bird</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family-Raleway:400,600,700,900">
+        <link rel="stylesheet" type="text/css" href="b1.css">
+        <Style>
+            .p{
+                background-color: #09EB2F;
+                height: 40px;
+                font-size: 20px;
+            }
+            .w{
+                position: absolute;
+                left: 120px;
+                font-size: 32px;
+                font-family: 'DejaVu Sans Mono, monospace';
+            }
+            .container1{
+                height: 80px;
+                width: 1453px;
+                padding: 40px 30px 40px 20px;
+                background-color: #ffffff;
+                background-color:rgba(0, 0, 0, 0.2); 
+                background-image: url("Images/b2.jpg");
+                background-repeat: no-repeat;
+                background-size: 1515px;
+                background-position-y: center;   
+            }
+            .containersearch{
+                height: 300px;
+                width: 700px;
+                padding: 40px 30px 40px 20px;
+                background-color: #7a2e2e;
+            }
+            
+            body {
+               
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+                 overflow: hidden;
+                 background-color: rgb(0, 0, 0);
+                 
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 100px;
+                text-decoration: none;
+                font-size: 17px;
+                margin-left: 30px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #449ab4;
+                color: rgb(0, 0, 0);
+            }
+
+            /*start of nav*/
+            .tab {
+                overflow: hidden;
+                border: 1px solid rgb(180, 52, 52);
+                background-color: #f1f1f1;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
+            }
+            
+            /*style for the search container*/
+            .container{
+	        
+            margin:20px;
+            width: 500px;
+            
+            margin-left: 320px;
+            margin-top: 90px;
+            padding: 0px,20px,20px,20px;
+            
+            }
+
+            .container-form{
+                padding: 20px;
+                margin: 0 auto;
+                height: auto;
+                
+                color: #000;
+              
+            }
+            form{
+                display: grid;
+               
+                grid-row-gap: 20px;
+            }
+            form p{
+                font-weight: 600;
+                
+            }
+            .form-field{
+                display: flex;
+                background: transparent;
+                justify-content: space-between;
+            }
+            input,select{
+                pad: 10px 15px;
+                background: transparent;
+            }
+            .btn{
+                background-color: rgba(0,0,0, .95);
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                font-size: 18px;
+                border-radius: 100px;
+                -webkit-webkit: border radius 100px;
+                -moz-webkit: border radius 100px;
+                -ms-webkit: border radius 100px;
+                -o-webkit: border radius 100px;
+                box-shadow: 7px 10px 12px rgba(0,0,0, .1);
+                cursor: pointer;
+                transition: all;
+                -webkit-transition: all;
+                -moz-transition: all;
+                -ms-transition: all;
+                -o-transition: all;
+                margin-left: 150px;
+                
+            }
+            .btn:hover{
+                transform: scale(1.03);
+                -webkit-transform: scale(1.03);
+                -moz-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                -o-transform: scale(1.03);
+                box-shadow:10px 12px 15px rgba(0,0,0, .3);
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+            .back-image {
+                background-image: url(Images/a1.jpg);
+                filter: blur();
+                
+                background-color: #cccccc;
+                height: 750px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                
+                background-position-y:200px;
+                
+            }
+            .w2{
+                position: absolute;
+                
+                font-size: 32px;
+                font-family: 'Chalkduster, fantasy'
+            }
+            
+        </Style>
+        
+    </head>
+    
+<body>
+    <div class="back-image">
+    <p class="container1">
+		<br>
+        <a class="w">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;H&nbsp; I&nbsp; G &nbsp;H&nbsp; &ensp;O&nbsp; N &nbsp;&nbsp;&ensp;&ensp;&ensp;&ensp;F &nbsp;&nbsp;L &nbsp;&nbsp;I&nbsp;&nbsp; G &nbsp;&nbsp;H &nbsp;&nbsp;T</a>
+
+    </p>
+    
+    
+
+    <div class="topnav">
+        <a href="home.html" target="_self">Home</a>
+        <a href="schedule.html" target="_self">SCHEDULE</a>
+        <a class="active" href="booking.html" target="_self">BOOKING</a>
+        <a href="contach.html" target="_self">Contact</a>
+        <a href="address.html" target="_self">About</a>
+        
+
+        
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Search')">Search</button>
+        <button class="tablinks" onclick="openCity(event, 'Flight')">Flight</button>
+        <button class="tablinks" onclick="openCity(event, 'Payment')">Payment</button>
+    </div>
+      
+    
+    <div id="Search" class="tabcontent">
+        <div class="container">
+            <div class="container.form">
+        <div class="register">
+            <label><w2 style="font-size: 22px;">From:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</w2></label>
+            <select  id="ph" style="background:transparent; cursor: pointer;width: 150px;height: 30px ;margin-left:10px ;background-color:rgba(0, 0, 0, 0.2);color: white;">
+                <option value="0" style="font-family: cursive;">choose</option>
+                <option value="India">India</option>
+                <option value="Paris">Paris</option>
+                <option value="Delhi">India</option>
+                <option value="Chennai">Chennai</option>    
+            </select>
+            
+            <br><br>
+            <label><w2 style="font-size: 22px;">To :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</w2></label>
+            <select name="select" id="#"style="background:transparent; cursor: pointer;width: 150px;height: 30px ;margin-left:10px ;background-color:rgba(0, 0, 0, 0.2);color: white;">
+                <option value="0">choose</option>
+                <option value="India">India</option>
+                <option value="Paris">Paris</option>
+                <option value="Delhi">India</option>
+                <option value="Chennai">Chennai</option>    
+            </select>
+            <br><br>
+    
+            <label><w2 style="font-size: 22px;">Departure Date :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</w2></label>
+            <input type="date" style="background:transparent; cursor: pointer;width: 150px;height: 30px ;margin-left:75px ;background-color:rgba(0, 0, 0, 0.2);color: white;">
+            <br><br>
+            <label><w2 style="font-size: 22px;">No Of Passengers:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</w2></label>
+            <input type="number" id="#" placeholder="Adults" style="width: 74px;height: 30px;margin-left: 60px;">
+            <input type="number" id="#" placeholder="Children" style="width: 74px;height: 30px;margin-left: 10px;">
+            <br><br>
+            
+            <label><w2 style="font-size: 22px;" >Select the Class :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</w2></label>
+            <select name="select" id="#" style="background:transparent; cursor: pointer;width: 150px;height: 30px ;margin-left:60px ;background-color:rgba(0, 0, 0, 0.2);color: white;">
+                <option value="0">choose</option>
+                <option value="Economy">Economy</option>
+                <option value="Premium Economy">Premium Economy</option>
+                <option value="Business Class">Business Class</option>
+                <option value="First Class">First Class</option>
+            </select>
+    
+            <br><br><br>
+            <button class="btn" >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Submit&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</button>
+    <br><br><br><br><br><br>
+            
+        </div> 
+    </div></div>
+    </div>
+
+    <div id="Flight" class="tabcontent">
+        
+        <table>
+            <tr>
+              <th>High on Flight</th>
+              <th>Depart</th>
+              <th>Arraival</th>
+              <th>Duration</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>HoF-3</td>
+              <td>10:00-Delhi</td>
+              <td>15:30-Chennai</td>
+              <td>5:30 hrs</td>
+              <td>2500</td>
+            </tr>
+            <tr>
+              <td>HoF-41</td>
+              <td>11:00-Delhi</td>
+              <td>16:30-Chennai</td>
+              <td>5:30 hrs</td>
+              <td>2100</td>
+            </tr>
+            <tr>
+              <td>HoF-22</td>
+              <td>17:00-New Delhi</td>
+              <td>20:55-Chennai</td>
+              <td>3:55 hrs</td>
+              <td>2900</td>
+            </tr>
+            <tr>
+              <td>HoF-7</td>
+              <td>22:00-New Delhi</td>
+              <td>03:00-Chennai</td>
+              <td>5 hrs</td>
+              <td>2200</td>
+            </tr>
+            
+          </table>
+
+    </div>
+      
+    <div id="Payment" class="tabcontent">
+        <h3>Payment</h3>
+        <p>You can pay using net banking (or) credit card (or) debit card.</p>
+    </div>
+</div>
+      
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+      
+      
+    
+
+</body>
+</html>
